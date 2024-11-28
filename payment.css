@@ -1,0 +1,342 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    /* Nền nhẹ nhàng hơn */
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1a593f;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #e68a00;
+}
+
+.header-right ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.header-right ul li a:hover {
+    opacity: 0.8;
+}
+
+.hotline {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a593f;
+    /* Màu nền cho hotline */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    /* Tạo hiệu ứng bóng */
+    z-index: 1000;
+    /* Đảm bảo nằm trên các thành phần khác */
+    font-size: 16px;
+}
+
+.hotline a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.hotline a:hover {
+    opacity: 0.8;
+}
+
+
+/* Căn chỉnh chung cho trang thanh toán */
+
+.checkout-page {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f3f9f7);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.checkout-page h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #1a593f;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.checkout-page p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+/* Trang thanh toán */
+
+.checkout-page {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.checkout-page h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #2d6a4f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.checkout-page p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Bố cục form thanh toán */
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Khoảng cách giữa các phần tử trong form */
+}
+
+.checkout-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.checkout-form input,
+.checkout-form select {
+    width: 96%;
+    padding: 14px;
+    font-size: 15px;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    /* Thêm khoảng cách dưới mỗi ô nhập liệu */
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+    border-color: #2d6a4f;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(45, 106, 79, 0.2);
+    outline: none;
+}
+
+
+/* Nút Thanh Toán */
+
+.checkout-form #pay-button {
+    padding: 15px;
+    background: linear-gradient(135deg, #52b788, #2d6a4f);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkout-form #pay-button:hover {
+    background: linear-gradient(135deg, #40916c, #1b4332);
+    transform: scale(1.05);
+}
+
+.checkout-form #pay-button:active {
+    transform: scale(0.97);
+}
+
+
+/* Phần hóa đơn tóm tắt */
+
+.checkout-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f1f8f5;
+    border-radius: 12px;
+    border: 1px solid #d6e9d5;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-summary h3 {
+    font-size: 18px;
+    color: #2d6a4f;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.checkout-summary p {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-summary .total {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1b4332;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .checkout-page {
+        margin: 20px;
+        padding: 20px;
+    }
+    .checkout-page h2 {
+        font-size: 24px;
+    }
+    .checkout-form input,
+    .checkout-form select {
+        font-size: 14px;
+    }
+    .checkout-form #pay-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .checkout-summary h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* Ẩn định dạng link nhưng vẫn giữ chức năng chuyển tab */
+
+a {
+    text-decoration: none;
+    /* Bỏ gạch dưới */
+    color: inherit;
+    /* Giữ màu văn bản mặc định (màu của phần tử chứa) */
+    cursor: pointer;
+    /* Giữ con trỏ chuột dạng "pointer" để biết là clickable */
+}
+
+
+/* Bạn cũng có thể thêm một số hiệu ứng hover để tạo cảm giác rõ ràng hơn */
+
+a:hover {
+    color: #2d6a4f;
+    /* Màu khi hover, thay đổi theo ý bạn */
+    transition: color 0.3s ease;
+    /* Hiệu ứng mượt mà khi đổi màu */
+}
+
+
+/* Modal Style */
+
+.modal {
+    display: none;
+    /* Ẩn modal mặc định */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Nền mờ */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <h1 class="logo">Fruit Market</h1>
+            <input type="text" class="search-bar" placeholder="Bạn cần tìm sản phẩm gì?">
+            <button class="search-button">Tìm</button>
+        </div>
+        <nav class="header-right">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign up</a></li>
+                <li><a href="cart.html">Giỏ Hàng</a></li>
+                <li><a href="#">Nguồn Gốc</a></li>\
+                <li><a href="payment.html">Thanh Toán</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <aside class="sidebar">
+            <h3>Khám phá</h3>
+            <ul>
+                <li><a href="#">Trái Cây & Rau Củ</a></li>
+                <li><a href="#">Các Loại Thịt</a></li>
+                <li><a href="#">Hải Sản</a></li>
+                <li><a href="#">Sữa & Bơ</a></li>
+                <li><a href="#">Sốt & Gia Vị</a></li>
+            </ul>
+            <h3>Giá sản phẩm</h3>
+            <input type="range" id="price-filter" min="0" max="1000000" value="500000">
+            <p>Giá: <span id="price-value">500,000</span>đ</p>
+        </aside>
+
+        <section class="product-list">
+            <div class="product">
+                <img src="apple1.jpg" alt="Táo Gala">
+                <h4>Táo Gala Mỹ 500G</h4>
+                <p>62,950đ</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="apple2.jpg" alt="Táo Envy">
+                <h4>Táo Envy New Zealand 500G</h4>
+                <p>113,950đ</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="pear.jpg" alt="Lê Hàn Quốc">
+                <h4>Lê Hàn Quốc 500G</h4>
+                <p>84,950đ</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Phần hotline -->
+    <div class="hotline">
+        <a href="tel:0903166228">📞 Hotline: 0903 166 228</a>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

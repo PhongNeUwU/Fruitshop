@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">FruitStore</div>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="register.html">Đăng ký</a>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <h2>Đăng nhập</h2>
+        <form action="login_process.php" method="POST">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required autocomplete="off">
+
+            <label for="login-password">Mật khẩu:</label>
+            <input type="password" id="login-password" name="password" required autocomplete="off">
+
+            <button type="submit">Đăng nhập</button>
+
+            <p><a href="forgot_password.html">Quên mật khẩu?</a></p>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Cửa Hàng Trái Cây</title>
+    <link rel="stylesheet" href="payment.css">
+    <!-- Sử dụng chung CSS với trang bán trái cây -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <h1 class="logo">Fruit Market</h1>
+            <input type="text" class="search-bar" placeholder="Bạn cần tìm sản phẩm gì?">
+            <button class="search-button">Tìm</button>
+        </div>
+        <nav class="header-right">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="#">Nguồn Gốc</a></li>\
+                <li><a href="cart.html">Giỏ Hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="checkout-page">
+        <h2>Thanh Toán</h2>
+        <p>Vui lòng điền đầy đủ thông tin để hoàn tất đơn hàng.</p>
+
+        <form id="paymentDetails" class="checkout-form">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+            <label for="address">Địa chỉ giao hàng:</label>
+            <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>
+
+            <label for="card-number">Số thẻ:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000" required>
+
+            <label for="expiration">Ngày hết hạn:</label>
+            <input type="month" id="expiration" name="expiration" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv" placeholder="***" required>
+
+            <button type="submit" id="pay-button">Thanh toán</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <div class="hotline">
+        <a href="tel:0903166228">📞 Hotline: 0903 166 228</a>
+    </div>
+
+    <!-- Modal Confirm -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h2>Đã hoàn tất thanh toán!</h2>
+            <p>Cảm ơn bạn đã mua hàng. Đơn hàng của bạn sẽ được xử lý sớm.</p>
+            <button id="close-modal-btn">Đóng</button>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="payment.js"></script>
+</body>
+
+</html>
